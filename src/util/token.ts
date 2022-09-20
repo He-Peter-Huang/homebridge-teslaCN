@@ -16,7 +16,7 @@ export async function getAccessToken(refreshToken: string): Promise<any> {
   return new Promise((resolve, reject) => {
     var req = {
       method: "POST",
-      url: "https://auth.tesla.com/oauth2/v3/token",
+      url: "https://auth.tesla.cn/oauth2/v3/token",
       json: true,
       body: {
         grant_type: "refresh_token",
